@@ -1,5 +1,6 @@
+  /* Navbar CSS */
 nav {
-  background-color: #333; /* Change the background color as needed */
+  background-color: #333;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -31,7 +32,7 @@ nav ul li a {
 
 nav ul li a.active,
 nav ul li a:hover {
-  color: #ffcc00; /* Change the color for active/hover state */
+  color: #ffcc00;
 }
 
 .checkbtn {
