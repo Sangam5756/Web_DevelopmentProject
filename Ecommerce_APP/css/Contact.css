@@ -1,35 +1,82 @@
-/* Contact Page CSS */
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Container styles */
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
-.content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 80%;
+.container h1 {
+    margin-bottom: 20px;
 }
 
-.left-side .details {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.form-group {
+    margin-bottom: 20px;
 }
 
-.right-side {
-  text-align: center;
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
 }
 
-.input-box {
-  margin-bottom: 20px;
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.input-box input {
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  width: 100%;
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
 }
